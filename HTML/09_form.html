@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- form 요소
+    사용자로부터 데이터(정보)를 입력 받기 위한 HTML 요소들 -->
+    <form action="/server/login">
+      <div>
+        <label for="email">로그인</label>
+        <input type="email" id="email" />
+      </div>
+      <div>
+        <label for="pw">비밀번호</label>
+        <input type="password" id="pw" />
+      </div>
+      <div>
+        <button title="로그인">로그인</button>
+      </div>
+    </form>
+    <!-- input 타입 체크요소 -->
+    <h4>당신이 배우고 싶은 언어는?(다중 선택 가능)</h4>
+    <div>
+      <input type="checkbox" name="chk_lang" id="chk_HTML" />
+      <label for="chk_HTML">HTML</label>
+      <br />
+      <input type="checkbox" name="chk_lang" id="chk_CSS" />
+      <label for="chk_CSS">CSS</label>
+      <br />
+      <input type="checkbox" name="chk_lang" id="chk_JavaScript" />
+      <label for="chk_JavaScript">JavaScript</label>
+    </div>
+    <div>
+      <h4>당신이 배우고 싶은 언어는?(하나만 선택 가능)</h4>
+      <input type="radio" name="rdo_lang" id="rdo_HTML" />
+      <label for="rdo_HTML">HTML</label>
+      <br />
+      <input type="radio" name="rdo_lang" id="rdo_CSS" />
+      <label for="rdo_CSS">CSS</label>
+      <br />
+      <input type="radio" name="rdo_lang" id="rdo_JV" />
+      <label for="rdo_JV">JavaScript</label>
+    </div>
+    <div>
+      <label for="fav_col">가장 좋아하는 색상은?</label>
+      <input type="color" name="fav_color" id="fav_col" />
+    </div>
+    <div>
+      <label for="borndate">태어난 날짜는?</label>
+      <input type="date" name="date" id="borndate" />
+    </div>
+    <div>
+      <label for="arrivaldate-time">입국한 날짜/시간은?</label>
+      <input
+        type="datetime-local"
+        name="arrivaldate-timelocal"
+        id="arrivaldate-time"
+      />
+    </div>
+    <div>
+      <form action="/server/login">
+        <label for="useremail">이메일주소는?</label>
+        <input type="email" name="inputemail" id="useremail" />
+        <button type="submit">저장</button>
+      </form>
+    </div>
+    <div>
+      <label for="attachment">파일첨부</label>
+      <input type="file" name="file" id="attachment" />
+    </div>
+    <div>
+      <input type="hidden" name="hidden_info" />
+    </div>
+    <div>
+      <img
+        src="/HTML/img/강아쥐.jpg"
+        alt="강아지 사진"
+        style="width: 100px; height: auto"
+      />
+    </div>
+    <div>
+      <label for="yearmonth">생년/년월</label>
+      <input type="month" name="month" id="yearmonth" />
+    </div>
+    <div>
+      <label for="old">당신의 나이는?</label>
+      <input type="number" name="year" id="old" min="0" max="100" />
+    </div>
+    <div>
+      <form action="">
+        <label for="userpw">비밀번호</label>
+        <input type="password" id="userpw" />
+      </form>
+    </div>
+    <div>
+      <form action="">
+        <label for="tel">전화번호</label>
+        <input
+          type="tel"
+          name="telephone"
+          id="tel"
+          pattern="^010-\d{4}-\d{4}$"
+        />
+        <button type="submit">저장</button>
+      </form>
+    </div>
+    <div>
+      <label for="general">일반문자</label>
+      <input type="text" name="general" id="general" />
+    </div>
+    <div>
+      <label for="time">예약시간</label>
+      <input type="time" name="time" id="time" />
+    </div>
+    <div>
+      <form action="">
+        <label for="url">블로그 주소</label>
+        <input type="url" name="url" id="url" />
+        <button type="submit">저장</button>
+      </form>
+    </div>
+    <div>
+      <label for="plan">주간계획</label>
+      <input type="week" name="plan" id="plan" />
+    </div>
+    <div>
+        <label for="search">검색조건</label>
+        <input type="search" name="" id="search">
+    </div>
+  </body>
+</html>
