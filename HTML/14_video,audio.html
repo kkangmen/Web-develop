@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- video attributes
+    - poster: 썸네일 이미지
+    - controls: 재생버튼, 일시정지, 소리 등 조정을 위한 UI 제공
+    - muted: 영상 음소거
+    - loop: 동영상 반복 재생
+    - autoplay: 동영상 재생이 가능한 시점이 될 때 자동으로 영상 재생
+    - preload: auto, metadata, none
+        1. auto: 사용자가 영상을 시청하는 안하든 영상을 미리 다운로드
+        2. metadata: 영상을 다운로드 x, 영상 상영 시간과 같은 메타 정보만 가져옴
+        3. none: 다운로드 x, 서버가 최소 트래픽을 유지하고 싶을때 -->
+    <!-- track attributes
+    - srclang: 자막 언어
+    - label: 자막 종류 레이블 -->
+    <video src="" poster="" width="" controls muted loop autoplay></video>
+    <br>
+    <video src="" width="" controls>
+        <track src="" kind="subtitles" srclang="en" label="영어(English)"></track>
+        <track src="" kind="subtitles" srclang="ko" label="한국어(Korean)"></track>
+    </video>
+    <audio src="" controls></audio>
+</body>
+</html>
