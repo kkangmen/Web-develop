@@ -1,27 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-        /* 스타일 */
-        /* html 요소에서 직접 style 속성을 통해 정의하는 것을 inline style */
-        /* <head> 태그 안에 작성하는 것을 internal style */
-        /* 별도의 .css 파일로 만들어서 사용하는 것을 external style */
+      /* 스타일 */
+      /* html 요소에서 직접 style 속성을 통해 정의하는 것을 inline style */
+      /* <head> 태그 안에 작성하는 것을 internal style */
+      /* 별도의 .css 파일로 만들어서 사용하는 것을 external style */
     </style>
-</head>
-<body>
-    <p>일반 문장입니다.</p>
-    <p style="color: rgb(255, 0, 0);">빨간색 글자입니다.</p>
-    <p style="background-color: green; color: blue;">초록색 배경에 파란색글자입니다.</p>
-    <p style="font-size: 30px;">큰 사이즈 글자입니다.</p>
-    <p style="text-align: center;">가운데 정렬</p>
-    <p style="text-align: right;">오른쪽 정렬</p>
-    <p style="font-weight: bold;">볼드체로 보입니다.</p>
-    <p style="text-decoration: underline;">밑줄이 생깁니다.</p>
-    <p style="text-decoration: line-through;">가운데 줄이 생깁니다.</p>
-    <p style="font-style: italic;">이탤릭체로 보여집니다.</p>
-
-</body>
+  </head>
+  <body>
+    <p draggable="true">일반 문장입니다.</p>
+    <p style="color: rgb(255, 0, 0)">빨간색 글자입니다.</p>
+    <p style="background-color: green; color: blue">
+      초록색 배경에 파란색글자입니다.
+    </p>
+    <p style="font-size: 30px">큰 사이즈 글자입니다.</p>
+    <p style="text-align: center">가운데 정렬</p>
+    <p style="text-align: right">오른쪽 정렬</p>
+    <p style="font-weight: bold">볼드체로 보입니다.</p>
+    <p style="text-decoration: underline">밑줄이 생깁니다.</p>
+    <p style="text-decoration: line-through">가운데 줄이 생깁니다.</p>
+    <p style="font-style: italic">이탤릭체로 보여집니다.</p>
+    <div>
+      <p style="text-align: center; font-size: x-large">가나다라마</p>
+      <p
+        style="
+          text-align: right;
+          text-decoration: underline;
+          font-style: oblique;
+        "
+      >
+        abcde
+      </p>
+    </div>
+  </body>
 </html>

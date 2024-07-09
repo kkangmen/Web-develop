@@ -8,7 +8,7 @@
   <body>
     <!-- form 요소
     사용자로부터 데이터(정보)를 입력 받기 위한 HTML 요소들 -->
-    <form action="/server/login">
+    <form action="/server/login" target="_blank">
       <div>
         <label for="email">로그인</label>
         <input type="email" id="email" />
@@ -18,7 +18,7 @@
         <input type="password" id="pw" />
       </div>
       <div>
-        <button title="로그인">로그인</button>
+        <button type="submit" title="로그인">로그인</button>
       </div>
     </form>
     <!-- input 타입 체크요소 -->
@@ -45,6 +45,7 @@
       <label for="rdo_JV">JavaScript</label>
     </div>
     <div>
+      <br />
       <label for="fav_col">가장 좋아하는 색상은?</label>
       <input type="color" name="fav_color" id="fav_col" />
     </div>
@@ -63,8 +64,8 @@
     <div>
       <form action="/server/login">
         <label for="useremail">이메일주소는?</label>
-        <input type="email" name="inputemail" id="useremail" />
-        <button type="submit">저장</button>
+        <input type="email" name="email" id="useremail" />
+        <button type="submit">로그인</button>
       </form>
     </div>
     <div>
@@ -127,8 +128,8 @@
       <input type="week" name="plan" id="plan" />
     </div>
     <div>
-        <label for="search">검색조건</label>
-        <input type="search" name="" id="search">
+      <label for="search">검색조건</label>
+      <input type="search" name="" id="search" />
     </div>
   </body>
 </html>
