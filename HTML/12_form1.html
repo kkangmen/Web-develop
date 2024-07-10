@@ -11,18 +11,20 @@
         1. get: 전송하는 데이터가 url에 붙어서 감. 전송하는 데이터가 url에 노출이 됨.
             - 보안에 취약할 수 있음
             - 페이지 주소를 공유해야 할 때
+        http://127.0.0.1:5500/HTML/%EC%A0%84%EC%86%A1%ED%95%A0%20%EC%84%9C%EB%B2%84%20%EC%A3%BC%EC%86%8C?username=&tel=&email=
         2. post: 전송하는 데이터가 url에 붙지 않고 감. 사용자 눈에 보이지 않음.
             - 보안적으로 더 좋음
             - 개발자 도구 같은 소프트웨어를 통해서 결국 데이터 확인가능.
             - 전송하는 데이터를 암호화하는것이 좋다.
-            - ex) https secure -->
+            - ex) https secure 
+        http://127.0.0.1:5500/HTML/%EC%A0%84%EC%86%A1%ED%95%A0%20%EC%84%9C%EB%B2%84%20%EC%A3%BC%EC%86%8C -->
 
     <!-- target: 데이터를 보일 장소
         1. _self:  지금 있는 브라우창에 띄움.
         2. _blank: 새로운 브라우저를 통해서 띄움. -->
 
     <!-- novalidate: input요소와 맞지 않아도 주의창이 뜨질 않음. -->
-    <form action="전송할 서버 주소" method="get" target="_blank" novalidate>
+    <form action="전송할 서버 주소" method="post" target="_blank" novalidate>
       <div>
         <label for="username">이름</label>
         <input type="text" name="username" id="username" />
