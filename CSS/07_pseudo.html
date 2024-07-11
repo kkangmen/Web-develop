@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      a {
+        text-decoration: none;
+      }
+      /* 가상 클래스 선택자 */
+      /* 마우스가 a태그 위에 올라올 때 */
+      a:hover {
+        color: white;
+        background-color: green;
+      }
+
+      button:hover {
+        color: black;
+        background-color: green;
+      }
+      /* 방문한 적이 없는 링크 */
+      a:link {
+        color: red;
+      }
+      /* 방문한 적이 있는 링크 */
+      a:visited {
+        color: blue;
+      }
+      /* 마우스가 포커스 되었을 때 */
+      input:focus {
+        border: 5px solid green;
+      }
+      table,
+      th,
+      td {
+        border: 1px solid black;
+        border-collapse: collapse;
+        text-align: center;
+      }
+      table {
+        width: 100%;
+      }
+
+      /* 2n 혹은 even : 짝수형 */
+      /* 2n+1 혹은 odd : 홀수형 */
+      tbody tr:nth-child(2n) {
+        background-color: yellowgreen;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <a target="_blank" href="https://naver.com">네이버</a>
+      <a target="_blank" href="https://google.com">구글</a>
+      <a target="_blank" href="https://dfldfl.com">가짜 사이트</a>
+    </div>
+    <div>
+      <button type="submit">조회</button>
+    </div>
+    <div>
+      <input type="text" name="" id="" />
+    </div>
+    <div>
+      <table>
+        <thead>
+          <tr>
+            <th>이름</th>
+            <th>연락처</th>
+            <th>이메일</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>유재석</td>
+            <td>010-0000-0000</td>
+            <td>ryu@gmail.com</td>
+          </tr>
+          <tr>
+            <td>김종국</td>
+            <td>010-0000-0001</td>
+            <td>kim@gmail.com</td>
+          </tr>
+          <tr>
+            <td>송지효</td>
+            <td>010-0000-0002</td>
+            <td>song@gmail.com</td>
+          </tr>
+          <tr>
+            <td>양세찬</td>
+            <td>010-0000-0003</td>
+            <td>yang@gmail.com</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div>
+      <label for="">텍스트</label>
+    </div>
+  </body>
+</html>
