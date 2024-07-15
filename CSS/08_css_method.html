@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/CSS/style.css" />
+    <!-- <style>
+      .table {
+        border: 1px solid black;
+        border-collapse: collapse;
+        width: 100%;
+      }
+      .table th,
+      .table td {
+        border: 1px solid black;
+        /* border-collapse: collapse; */
+      }
+
+      .striped-table tbody tr:nth-child(2n + 1) {
+        background-color: greenyellow;
+      }
+    </style> -->
+  </head>
+  <body>
+    <!-- CSS 적용하는 방법 3가지 -->
+    <!-- 1. inline style : html 시작 태그에 style 속성을 통해 직접 입력 -->
+    <!-- 2. internal style : head 태그 안에 <style> 태그에 스타일을 입력 -->
+    <!-- 3 exteranl style : 별도의 css 파일을 만들고 <head> 태그 안에 link걸어둠 -->
+
+    <a href="">개발자의 품격</a>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>이름</th>
+          <th>연락처</th>
+          <th>이메일</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>유재석</td>
+          <td>010-0000-0000</td>
+          <td>ryu@gmail.com</td>
+        </tr>
+        <tr>
+          <td>김종국</td>
+          <td>010-0000-0001</td>
+          <td>kim@gmail.com</td>
+        </tr>
+        <tr>
+          <td>송지효</td>
+          <td>010-0000-0002</td>
+          <td>song@gmail.com</td>
+        </tr>
+        <tr>
+          <td>양세찬</td>
+          <td>010-0000-0003</td>
+          <td>yang@gmail.com</td>
+        </tr>
+      </tbody>
+    </table>
+    <br />
+    <table class="table striped-table">
+      <thead>
+        <tr>
+          <th>이름</th>
+          <th>연락처</th>
+          <th>이메일</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>유재석</td>
+          <td>010-0000-0000</td>
+          <td>ryu@gmail.com</td>
+        </tr>
+        <tr>
+          <td>김종국</td>
+          <td>010-0000-0001</td>
+          <td>kim@gmail.com</td>
+        </tr>
+        <tr>
+          <td>송지효</td>
+          <td>010-0000-0002</td>
+          <td>song@gmail.com</td>
+        </tr>
+        <tr>
+          <td>양세찬</td>
+          <td>010-0000-0003</td>
+          <td>yang@gmail.com</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
