@@ -5,125 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-      * {
-        box-sizing: border-box;
-      }
-      html {
-        scroll-behavior: smooth;
-      }
       body {
-        margin: 0px;
+        background-color: blue;
       }
-      .header {
-        padding: 60px;
-        background-color: #f9fc63;
-        color: black;
-        text-align: center;
-      }
-      .navbar {
-        display: flex;
-        flex-direction: row;
-        background-color: #333;
-        justify-content: center;
-        position: sticky;
-        top: 0;
-      }
-      .navbar a {
-        color: white;
-        text-decoration: none;
-        padding: 14px 20px;
-        text-align: center;
-      }
-      .navbar a:hover {
-        background-color: #f9fc63;
-        color: black;
-      }
-      .row {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-      }
-      .side {
-        flex: 30%;
-        background-color: #f1f1f1;
-        padding: 20px;
-      }
-      .fakeimg {
-        padding: 20px;
-        width: 100%;
-        background-color: #aaa;
-        text-align: center;
-      }
-      .main {
-        flex: 70%;
-        background-color: white;
-        padding: 20px;
-      }
-      @media screen and (max-width: 768px) {
-        .row, .navbar {
-            flex-direction: column;
+      @media screen and (max-width: 600px) {
+        body {
+          background-color: red;
         }
       }
     </style>
   </head>
-  <body>
-    <div class="header">
-      <h1>Who Am I</h1>
-    </div>
-    <div class="navbar">
-      <a href="#project1">메뉴1</a>
-      <a href="#project2">메뉴2</a>
-      <a href="#project3">메뉴3</a>
-      <a href="#project4">메뉴4</a>
-      <a href="#project5">메뉴5</a>
-    </div>
-    <div class="row">
-      <div class="side">
-        <div class="about">
-          <h2>About</h2>
-          <div class="fakeimg" style="height: 200px">Image</div>
-          <p>저는 22년차 개발자입니다.</p>
-          <h3>Skills</h3>
-          <p>JavaScirpt, Database</p>
-          <div class="fakeimg" style="height: 68px">Image</div>
-          <br />
-          <div class="fakeimg" style="height: 68px">Image</div>
-          <br />
-          <div class="fakeimg" style="height: 68px">Image</div>
-        </div>
-      </div>
-      <div class="main">
-        <div id="project1">
-            <h2>프로젝트1</h1>
-            <h3>2022년 3월</h3>
-            <div class="fakeimg" style="height: 200px;">이미지 삽입</div>
-            <p>프로젝트 설명: </p>
-        </div>
-        <div id="project2">
-            <h2>프로젝트2</h1>
-            <h3>2022년 3월</h3>
-            <div class="fakeimg" style="height: 200px;">Image</div>
-            <p>프로젝트 설명: </p>
-        </div>
-        <div id="project3">
-            <h2>프로젝트3</h1>
-            <h3>2022년 3월</h3>
-            <div class="fakeimg" style="height: 200px;">Image</div>
-            <p>프로젝트 설명: </p>
-        </div>
-        <div id="project4">
-            <h2>프로젝트4</h1>
-            <h3>2022년 3월</h3>
-            <div class="fakeimg" style="height: 200px;">Image</div>
-            <p>프로젝트 설명: </p>
-        </div>
-        <div id="project5">
-            <h2>프로젝트5</h1>
-            <h3>2022년 3월</h3>
-            <div class="fakeimg" style="height: 200px;">Image</div>
-            <p>프로젝트 설명: </p>
-        </div>
-      </div>
-    </div>
-  </body>
+  <body></body>
 </html>
