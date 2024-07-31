@@ -27,3 +27,11 @@ console.log(typeof parseFloat("0.99"), parseFloat("0.99"));
 console.log(!"x");
 console.log(!"");
 console.log(!!{});
+
+/**
+ * 1) 아무 글자도 없는 String
+ * 2) 값이 없는 경우
+ * 3) 0
+ *
+ * 모두 false를 반환한다
+ */
