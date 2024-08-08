@@ -128,3 +128,27 @@ class FemaleIdol extends Idol {
 
 const cIveMembers = iveMembers.map((x) => new FemaleIdol(x["name"], x["year"]));
 console.log(cIveMembers);
+
+const cBtsMembers = btsMembers.map((x) => new MaleIdol(x["name"], x["year"]));
+console.log(cBtsMembers);
+
+const iveGroup = new IdolGroup("아이브", cIveMembers);
+console.log(iveGroup);
+
+const btsGroup = new IdolGroup("BTS", cBtsMembers);
+console.log(btsGroup);
+
+const korea = new Country("대한민국", [iveGroup, btsGroup]);
+console.log(korea);
+
+const allTogether = new Country("대한민국", [
+  new IdolGroup(
+    "아이브",
+    iveMembers.map((x) => new FemaleIdol(x["name"], x["year"]))
+  ),
+  new IdolGroup(
+    "BTS",
+    btsMembers.map((x) => new MaleIdol(x["name"], x["year"]))
+  ),
+]);
+console.log(allTogether);
